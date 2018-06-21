@@ -1,6 +1,10 @@
-function todoRducer2(state=[],action){
+
+
+import { ActionsType } from '../action.js'
+
+function todoRducer2(state={},action){
     switch(action.type){
-        case 'inputText':
+        case ActionsType.inputText:
             return action.data;
         default :
             return state;

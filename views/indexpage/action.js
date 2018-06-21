@@ -1,11 +1,11 @@
-const actionsType = {
+export const ActionsType = {
     init:'init',
     inputText:'inputText'
 }
 
 export function actions(types,data) {
     return {
-        type: actionsType[types],
+        type: ActionsType[types],
         data
     }
 }
